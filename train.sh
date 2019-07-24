@@ -8,7 +8,7 @@
 #   on the final (held-out) test set, change 'val' to 'test'.
 type=java14m
 dataset_name=java14m
-data_dir=data/${dataset_name}
+data_dir=dataset/data/${dataset_name}
 data=${data_dir}/${dataset_name}
 test_data=${data_dir}/${dataset_name}.val.c2v
 model_dir=models/${type}

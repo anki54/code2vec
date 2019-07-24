@@ -1,7 +1,12 @@
-int f(int n) {
-    if (n == 0) {
-        return 1; 
-    } else {
-        return n * f(n-1);
-    }
-}
+import java.lang.*; 
+  
+public class Geeks { 
+  
+    public static void main(String[] args) 
+    { 
+        int a = 62; 
+        int b = 18; 
+        // It will return the sum of two arguments. 
+        System.out.println("The sum is =" + Integer.sum(a, b)); 
+    } 
+} 
