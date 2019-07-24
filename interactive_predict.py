@@ -26,6 +26,7 @@ class InteractivePredictor:
             return file.readlines()
 
     def predict(self):
+	## Add iterative search to go over files produced by SARD utility
         input_filename = 'Input.java'
         print('Starting interactive prediction...')
         while True:
@@ -54,4 +55,5 @@ class InteractivePredictor:
                     attention_obj['score'], attention_obj['token1'], attention_obj['path'], attention_obj['token2']))
                 if self.config.EXPORT_CODE_VECTORS:
                     print('Code vector:')
+		    ## dump code vector to a new file
                     print(' '.join(map(str, raw_prediction.code_vector)))
