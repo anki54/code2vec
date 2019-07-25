@@ -1,0 +1,1 @@
+python3 code2vec.py --load models/models/java14m/saved_model_iter8.release --predict --export_code_vectors
