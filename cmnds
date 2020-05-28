@@ -1,1 +1,52 @@
 python3 code2vec.py --load models/models/java14m/saved_model_iter8.release --predict --export_code_vectors
+
+ 2059  python3 code2vec.py --load models/sharp/saved_model_iter51 --test data/csharp/csharp.val.c2v 
+ 2060* python3 code2vec.py --load models/sharp/saved_model_iter51 --predict
+ 2061  python3 code2vec.py --load models/sharp/saved_model_iter51 --test data/csharp/csharp.val.c2v --export_code_vectors
+ 2062  python3 code2vec.py --load models/sharp/saved_model_iter48 --test data/csharp/csharp.val.c2v --export_code_vectors
+ 2063  python3 code2vec.py --load models/sharp/saved_model_iter50 --release 
+ 2064  ls -ltr
+ 2065  python3 code2vec.py --load models/sharp/saved_model_iter50 --test data/csharp/csharp.val.c2v --export_code_vectors
+ 2066  ./train.sh
+ 2067  python code2vec.py --load models/sharp/saved_model_iter33 --test data/csharp/csharp.test.c2v
+ 2068  python code2vec.py --load models/sharp/saved_model_iter33 --test data/csharp/csharp.test.c2v --export_code_vectors
+ 2069  ls -ltr data/csharp/
+ 2070  head data/csharp/csharp.test.c2v.vectors 
+ 2071  ls -ltr data/csharp/
+ 2072  cat csharp.test.c2v.num_examples
+ 2073  cat data/csharp/csharp.test.c2v.num_examples
+ 2074  cat csharp.test.c2v.num_examples| wc -l
+ 2075  cat data/csharp/csharp.test.c2v.num_examples| wc -l
+ 2076  cat data/csharp/csharp.test.c2v.vectors | wc -l
+ 2077  find dataset/data/csharp/my_test_dir/ -type f | wc -l
+ 2078* find dataset/data/csharp/my_test_dir/ -type f | wc -l
+ 2079  python code2vec.py --load models/sharp/saved_model_iter33 --predict
+ 2080  ls -ltr
+ 2081  ./csharp_interactive.sh
+ 2082  chmor 777 csharp_interactive.sh
+ 2083  chmod 777 csharp_interactive.sh
+ 2084  ./csharp_interactive.sh
+ 2085  python code2vec.py --load models/sharp/saved_model_iter33 --test data/csharp/csharp.data.c2v --export_code_vectors
+ 2086  ./csharp_interactive.sh
+ 2087  python code2vec.py --load models/sharp/saved_model_iter33 --test dataset/data/csharp/new_data/csharp.data.c2v --export_code_vectors
+ 2088  ./csharp_interactive.sh
+ 2089  python code2vec.py --load models/sharp/saved_model_iter33 --test dataset/data/csharp/new_data/csharp.data.c2v --export_code_vectors
+ 2090  ls -ltr
+ 2091  ./csharp_interactive.sh
+ 2092  python code2vec.py --load models/sharp/saved_model_iter33 --test dataset/data/csharp/new_data/csharp.data.c2v --export_code_vectors
+ 2093  ls -ltr dataset/data/csharp/new_data/
+ 2094  cat dataset/data/csharp/new_data/csharp.data.c2v.vectors
+ 2095  ./csharp_interactive.sh
+ 2096  python code2vec.py --load models/sharp/saved_model_iter33 --test dataset/data/csharp/new_data/csharp.data.c2v --export_code_vectors
+ 2097  cat dataset/data/csharp/new_data/csharp.data.c2v.vectors
+ 2098  ./csharp_interactive.sh dataset/data/csharp/new_data
+ 2099  python sard_csharp_utility.py 
+ 2100  ./csharp_interactive.sh dataset/data/csharp/000/220/851/cwe_89__I_args__F_invalid_filenames_chars_semi-colon_path__S_SQL_prepared__EQ_mysql_prepared__1-4.5_File1.cs
+ 2101  python sard_csharp_utility.py 
+ 2102  ./csharp_interactive.sh dataset/data/csharp/000/220/851
+ 2103  python sard_csharp_utility.py 
+ 2104  python code2vec.py --load models/sharp/saved_model_iter33 --test dataset/data/csharp/new_data/*.c2v --export_code_vectors
+ 2105  python code2vec.py --load models/sharp/saved_model_iter33 --test dataset/data/csharp/new_data/csharp.data.c2v --export_code_vectors
+ 2106  python sard_csharp_utility.py 
+ 2107  history
+

@@ -47,7 +47,7 @@ class Config:
         self.SAVE_EVERY_EPOCHS = 1
         self.TRAIN_BATCH_SIZE = 1024
         self.TEST_BATCH_SIZE = self.TRAIN_BATCH_SIZE
-        self.TOP_K_WORDS_CONSIDERED_DURING_PREDICTION = 10
+        self.TOP_K_WORDS_CONSIDERED_DURING_PREDICTION = 4
         self.NUM_BATCHES_TO_LOG_PROGRESS = 100
         self.NUM_TRAIN_BATCHES_TO_EVALUATE = 1800
         self.READER_NUM_PARALLEL_BATCHES = 6  # cpu cores [for tf.contrib.data.map_and_batch() in the reader]

@@ -52,7 +52,7 @@ class Code2VecModel(Code2VecModelBase):
         input_iterator = tf.compat.v1.data.make_initializable_iterator(train_reader.get_dataset())
         input_iterator_reset_op = input_iterator.initializer
         input_tensors = input_iterator.get_next()
-
+        print(input_tensors)
         optimizer, train_loss = self._build_tf_training_graph(input_tensors)
         self.saver = tf.compat.v1.train.Saver(max_to_keep=self.config.MAX_TO_KEEP)
 
@@ -82,8 +82,8 @@ class Code2VecModel(Code2VecModelBase):
                 sum_loss += batch_loss
                 if batch_num % self.config.NUM_BATCHES_TO_LOG_PROGRESS == 0:
                     self._trace_training(sum_loss, batch_num, multi_batch_start_time)
-                    self.log('Number of waiting examples in queue: %d' % self.sess.run(
-                        "shuffle_batch/random_shuffle_queue_Size:0"))
+                    '''self.log('Number of waiting examples in queue: %d' % self.sess.run(
+                        "shuffle_batch/random_shuffle_queue_Size:0"))'''
                     sum_loss = 0
                     multi_batch_start_time = time.time()
                 if batch_num % num_batches_to_save_and_eval == 0:

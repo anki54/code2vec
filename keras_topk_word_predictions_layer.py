@@ -23,6 +23,8 @@ class TopKWordPredictionsLayer(Layer):
         if len(input_shape) < 2:
             raise ValueError("Input shape for TopKWordPredictionsLayer should be of >= 2 dimensions.")
         if input_shape[-1] < self.top_k:
+            print(input_shape[-1])
+            print(self.top_k)
             raise ValueError("Last dimension of input shape for TopKWordPredictionsLayer should be of >= `top_k`.")
         super(TopKWordPredictionsLayer, self).build(input_shape)
         self.trainable = False
