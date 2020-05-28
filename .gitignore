@@ -6,3 +6,6 @@
 *.tar.gz
 **/log.txt
 **/sard/**
+*.c2v
+*.csv
+*.hdf5
