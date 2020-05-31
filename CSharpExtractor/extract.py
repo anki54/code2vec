@@ -30,10 +30,7 @@ def ExtractFeaturesForDir(args, dir, prefix):
                '--path', dir, '--threads', str(args.num_threads), '--ofile_name', str(args.ofile_name)]
 
 
-
     print(command)
-
-    # print command
 
     # os.system(command)
     kill = lambda process: process.kill()

@@ -1,15 +1,20 @@
 *.class
 *.lst
+*.pyc
 **/models/**
 **/data/**
 **/.idea/**
 *.tar.gz
+<<<<<<< HEAD
 <<<<<<< HEAD
 **/log.txt
 **/sard/**
 *.c2v
 *.csv
 *.hdf5
+=======
+**/log.txt
+>>>>>>> 372fbccf334e1158baa212ce40f9559677aa91f8
 =======
 **/log.txt
 >>>>>>> 372fbccf334e1158baa212ce40f9559677aa91f8
