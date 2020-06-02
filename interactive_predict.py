@@ -7,7 +7,7 @@ from extractor import Extractor
 SHOW_TOP_CONTEXTS = 10
 MAX_PATH_LENGTH = 8
 MAX_PATH_WIDTH = 2
-JAR_PATH = 'CSharpExtractor/CSharpExtractor/Extractor/Extractor.csproj'
+JAR_PATH = 'JavaExtractor/JPredict/target/JavaExtractor-0.0.1-SNAPSHOT.jar'
 
 
 class InteractivePredictor:
@@ -28,7 +28,7 @@ class InteractivePredictor:
 
     def predict(self):
         ## Add iterative search to go over files produced by SARD utility
-        sard_file_path='sard/data_1/'
+        sard_file_path='sard/data/'
         for input_filename in os.listdir(sard_file_path):
             print('Starting interactive prediction...')
             print(input_filename)
@@ -63,7 +63,7 @@ class InteractivePredictor:
                 if self.config.EXPORT_CODE_VECTORS:
                     print('Code vector:')
                     ## dump code vector to a new file
-                    f = open('sard/vector_1/'+input_filename +'.vector','w')
+                    f = open('sard/vector/'+input_filename +'.vector','w')
                     f.write(' '.join(map(str, raw_prediction.code_vector)))
                     f.close()
                     ##print(' '.join(map(str, raw_prediction.code_vector)))
